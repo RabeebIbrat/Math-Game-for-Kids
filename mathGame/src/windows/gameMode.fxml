@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@Stylesheet.css" fx:controller="windows.gameModeController" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="99.0" layoutY="62.0" prefHeight="372.0" prefWidth="492.0" styleClass="overPaneNormal">
+         <children>
+            <Label layoutX="145.0" layoutY="33.0" text="DIFFICULTY LABEL" />
+            <CheckBox layoutX="189.0" layoutY="84.0" mnemonicParsing="false" selected="false" text="EASY" textFill="#b91717" fx:id="easyCheck" onAction="#easyClick"/>
+            <CheckBox layoutX="189.0" layoutY="122.0" mnemonicParsing="false" selected="true" text="MEDIUM" textFill="#b91717"  fx:id="mediumCheck" onAction="#mediumClick"/>
+            <CheckBox layoutX="189.0" layoutY="163.0" mnemonicParsing="false" selected="false" text="HARD" textFill="#b91717" fx:id="hardCheck" onAction="#hardClick"/>
+            <Label layoutX="82.0" layoutY="224.0" text="TOTAL QUESTION :" />
+            <TextField alignment="CENTER" layoutX="293.0" layoutY="222.0" prefHeight="35.0" prefWidth="116.0" text="10" fx:id="qsNumberText"/>
+            <Button layoutX="202.0" layoutY="295.0" mnemonicParsing="false" text="NEXT !" fx:id="nextButton" onAction="#nextButtonClick"/>
+         </children>
+      </Pane>
+   </children>
+</Pane>
